@@ -2,7 +2,7 @@ var bettingContractV1 = artifacts.require("./bettingContractV1.sol");
 
 contract('bettingContractV1', function(accounts) {
 
-    it("deploy contract and receive matchid", function(done) {
+    it("deploy contract and receive matchid", function() {
         var betting_contract_v1;
 
         return bettingContractV1.deployed().then(function (instance) {
