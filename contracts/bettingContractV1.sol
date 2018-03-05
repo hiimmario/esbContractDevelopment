@@ -5,35 +5,33 @@ contract bettingContractV1 {
     address public team1bet;
     address public team2bet;
 
-    uint public amount;
     uint public matchId;
 
-    function bettingContractV1(uint _matchId, address _address, uint _choice, uint _amount) {
+    function bettingContractV1(uint _matchId, uint _choice) payable {
         if(_choice == 1) {
-            team1bet = _address;
+            team1bet = msg.sender;
         }
         else {
-            team2bet = _address;
+            team2bet = msg.sender;
         }
 
-        amount = _amount;
         matchId = _matchId;
     }
 
-    function returnMatchId() returns (uint) {
+    function makeBet(uint _choice) payable {
+        if(_choice == 1) {
+            team1bet = msg.sender;
+        }
+        else {
+            team2bet = msg.sender;
+        }
+    }
+
+    function getMatchId() returns (uint) {
         return matchId;
     }
 
-    function makeBet(address _address, uint _choice, uint _amount) {
-        if(_choice == 1) {
-            team1bet = _address;
-        }
-        else {
-            team2bet = _address;
-        }
+    function getFunds() returns (uint) {
+        return this.balance;
     }
-
-
-
-
 }
