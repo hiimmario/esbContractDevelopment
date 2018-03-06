@@ -34,4 +34,19 @@ contract bettingContractV1 {
     function getFunds() returns (uint) {
         return this.balance;
     }
+
+    function setWinner(uint winner) returns (bool) {
+        if(winner == 1) {
+            team1bet.send(this.balance);
+        }
+        else if (winner == 2) {
+            team2bet.send(this.balance);
+        }
+        else {
+            team1bet.send(this.balance/2);
+            team2bet.send(this.balance/2);
+        }
+
+        return true;
+    }
 }
