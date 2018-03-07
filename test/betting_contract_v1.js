@@ -21,14 +21,14 @@ contract('bettingContractV1', function(accounts) {
 
             assert.equal(3000000000000000000, result, "funds from contract deployment should be 3000000000000000000wei");
             console.log("contract funds after deployment in wei: " + result);
-            betting_contract_v1.makeBet.sendTransaction(2, {value: 3000000000000000000, from:accounts[1]});
+            betting_contract_v1.makeBet.sendTransaction(1, {value: 3000000000000000000, from:accounts[1]});
             return betting_contract_v1.getFunds.call();
 
         }).then(function(result) {
 
             assert.equal(6000000000000000000, result, "funds should be 6000000000000000000 wei");
             console.log("contract funds after taking bet on other team (in wei): " + result);
-            betting_contract_v1.setWinner(2);
+            betting_contract_v1.setWinner(1);
             return betting_contract_v1.getFunds.call();
 
         }).then(function(result) {

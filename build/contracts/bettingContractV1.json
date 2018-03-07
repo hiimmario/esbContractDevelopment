@@ -4,7 +4,7 @@
     {
       "constant": true,
       "inputs": [],
-      "name": "team2bet",
+      "name": "team1bet",
       "outputs": [
         {
           "name": "",
@@ -18,7 +18,7 @@
     {
       "constant": true,
       "inputs": [],
-      "name": "team1bet",
+      "name": "team0bet",
       "outputs": [
         {
           "name": "",
@@ -120,11 +120,11 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x606060405260405160408061060583398101604052808051906020019091908051906020019091905050600181141561007757336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506100b9565b33600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b816002819055505050610534806100d16000396000f300606060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630df716021461008857806311662515146100c3578063153dc1821461011857806320a0fdbc146101415780634d9b373514610196578063718cc769146101bf57806399892e47146101d7575b600080fd5b341561009357600080fd5b6100a96004808035906020019091905050610200565b604051808215151515815260200191505060405180910390f35b34156100ce57600080fd5b6100d66103fb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561012357600080fd5b61012b610421565b6040518082815260200191505060405180910390f35b341561014c57600080fd5b61015461042b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101a157600080fd5b6101a9610450565b6040518082815260200191505060405180910390f35b6101d5600480803590602001909190505061046f565b005b34156101e257600080fd5b6101ea610502565b6040518082815260200191505060405180910390f35b6000600182141561027e576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050506103f2565b60028214156102fb57600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050506103f1565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc60023073ffffffffffffffffffffffffffffffffffffffff163181151561035957fe5b049081150290604051600060405180830381858888f1935050505050600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc60023073ffffffffffffffffffffffffffffffffffffffff16318115156103d457fe5b049081150290604051600060405180830381858888f19350505050505b5b60019050919050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600254905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60003073ffffffffffffffffffffffffffffffffffffffff1631905090565b60018114156104bd57336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506104ff565b33600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b50565b600254815600a165627a7a7230582081e7c1e23faaf9e63a88b1bddf0897af6d43a32ea6c8f2714ef6ee5d0f74ca9e0029",
-  "deployedBytecode": "0x606060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630df716021461008857806311662515146100c3578063153dc1821461011857806320a0fdbc146101415780634d9b373514610196578063718cc769146101bf57806399892e47146101d7575b600080fd5b341561009357600080fd5b6100a96004808035906020019091905050610200565b604051808215151515815260200191505060405180910390f35b34156100ce57600080fd5b6100d66103fb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561012357600080fd5b61012b610421565b6040518082815260200191505060405180910390f35b341561014c57600080fd5b61015461042b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101a157600080fd5b6101a9610450565b6040518082815260200191505060405180910390f35b6101d5600480803590602001909190505061046f565b005b34156101e257600080fd5b6101ea610502565b6040518082815260200191505060405180910390f35b6000600182141561027e576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050506103f2565b60028214156102fb57600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050506103f1565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc60023073ffffffffffffffffffffffffffffffffffffffff163181151561035957fe5b049081150290604051600060405180830381858888f1935050505050600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc60023073ffffffffffffffffffffffffffffffffffffffff16318115156103d457fe5b049081150290604051600060405180830381858888f19350505050505b5b60019050919050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600254905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60003073ffffffffffffffffffffffffffffffffffffffff1631905090565b60018114156104bd57336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506104ff565b33600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b50565b600254815600a165627a7a7230582081e7c1e23faaf9e63a88b1bddf0897af6d43a32ea6c8f2714ef6ee5d0f74ca9e0029",
+  "bytecode": "0x606060405260405160408061060483398101604052808051906020019091908051906020019091905050600081141561007757336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506100b9565b33600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b816002819055505050610533806100d16000396000f300606060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630df7160214610088578063153dc182146100c357806320a0fdbc146100ec578063409bea13146101415780634d9b373514610196578063718cc769146101bf57806399892e47146101d7575b600080fd5b341561009357600080fd5b6100a96004808035906020019091905050610200565b604051808215151515815260200191505060405180910390f35b34156100ce57600080fd5b6100d66103fa565b6040518082815260200191505060405180910390f35b34156100f757600080fd5b6100ff610404565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561014c57600080fd5b61015461042a565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101a157600080fd5b6101a961044f565b6040518082815260200191505060405180910390f35b6101d5600480803590602001909190505061046e565b005b34156101e257600080fd5b6101ea610501565b6040518082815260200191505060405180910390f35b60008082141561027d576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050506103f1565b60018214156102fa57600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050506103f0565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc60023073ffffffffffffffffffffffffffffffffffffffff163181151561035857fe5b049081150290604051600060405180830381858888f1935050505050600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc60023073ffffffffffffffffffffffffffffffffffffffff16318115156103d357fe5b049081150290604051600060405180830381858888f19350505050505b5b60019050919050565b6000600254905090565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60003073ffffffffffffffffffffffffffffffffffffffff1631905090565b60008114156104bc57336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506104fe565b33600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b50565b600254815600a165627a7a72305820e59c1b6778c64170e3ac2d4b6cb4f09fd72aa5d9e557214da9200fed65c43c5c0029",
+  "deployedBytecode": "0x606060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630df7160214610088578063153dc182146100c357806320a0fdbc146100ec578063409bea13146101415780634d9b373514610196578063718cc769146101bf57806399892e47146101d7575b600080fd5b341561009357600080fd5b6100a96004808035906020019091905050610200565b604051808215151515815260200191505060405180910390f35b34156100ce57600080fd5b6100d66103fa565b6040518082815260200191505060405180910390f35b34156100f757600080fd5b6100ff610404565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561014c57600080fd5b61015461042a565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101a157600080fd5b6101a961044f565b6040518082815260200191505060405180910390f35b6101d5600480803590602001909190505061046e565b005b34156101e257600080fd5b6101ea610501565b6040518082815260200191505060405180910390f35b60008082141561027d576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050506103f1565b60018214156102fa57600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050506103f0565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc60023073ffffffffffffffffffffffffffffffffffffffff163181151561035857fe5b049081150290604051600060405180830381858888f1935050505050600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc60023073ffffffffffffffffffffffffffffffffffffffff16318115156103d357fe5b049081150290604051600060405180830381858888f19350505050505b5b60019050919050565b6000600254905090565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60003073ffffffffffffffffffffffffffffffffffffffff1631905090565b60008114156104bc57336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506104fe565b33600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b50565b600254815600a165627a7a72305820e59c1b6778c64170e3ac2d4b6cb4f09fd72aa5d9e557214da9200fed65c43c5c0029",
   "sourceMap": "25:1041:0:-;;;144:232;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;232:1;221:7;:12;218:123;;;260:10;249:8;;:21;;;;;;;;;;;;;;;;;;218:123;;;320:10;309:8;;:21;;;;;;;;;;;;;;;;;;218:123;361:8;351:7;:18;;;;144:232;;25:1041;;;;;;",
-  "deployedSourceMap": "25:1041:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;717:347;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;88:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;566:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;59:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;640:71;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;382:178;;;;;;;;;;;;;;;;;;118:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;717:347;758:4;787:1;777:6;:11;774:262;;;804:8;;;;;;;;;;;:13;;:27;818:4;:12;;;804:27;;;;;;;;;;;;;;;;;;;;;;;;774:262;;;870:1;860:6;:11;856:180;;;887:8;;;;;;;;;;;:13;;:27;901:4;:12;;;887:27;;;;;;;;;;;;;;;;;;;;;;;;856:180;;;953:8;;;;;;;;;;;:13;;:29;980:1;967:4;:12;;;:14;;;;;;;;953:29;;;;;;;;;;;;;;;;;;;;;;;;996:8;;;;;;;;;;;:13;;:29;1023:1;1010:4;:12;;;:14;;;;;;;;996:29;;;;;;;;;;;;;;;;;;;;;;;;856:180;774:262;1053:4;1046:11;;717:347;;;:::o;88:23::-;;;;;;;;;;;;;:::o;566:68::-;597:4;620:7;;613:14;;566:68;:::o;59:23::-;;;;;;;;;;;;;:::o;640:71::-;669:4;692;:12;;;685:19;;640:71;:::o;382:178::-;445:1;434:7;:12;431:123;;;473:10;462:8;;:21;;;;;;;;;;;;;;;;;;431:123;;;533:10;522:8;;:21;;;;;;;;;;;;;;;;;;431:123;382:178;:::o;118:19::-;;;;:::o",
-  "source": "pragma solidity ^0.4.4;\n\ncontract bettingContractV1 {\n\n    address public team1bet;\n    address public team2bet;\n\n    uint public matchId;\n\n    function bettingContractV1(uint _matchId, uint _choice) payable {\n        if(_choice == 1) {\n            team1bet = msg.sender;\n        }\n        else {\n            team2bet = msg.sender;\n        }\n\n        matchId = _matchId;\n    }\n\n    function makeBet(uint _choice) payable {\n        if(_choice == 1) {\n            team1bet = msg.sender;\n        }\n        else {\n            team2bet = msg.sender;\n        }\n    }\n\n    function getMatchId() returns (uint) {\n        return matchId;\n    }\n\n    function getFunds() returns (uint) {\n        return this.balance;\n    }\n\n    function setWinner(uint winner) returns (bool) {\n        if(winner == 1) {\n            team1bet.send(this.balance);\n        }\n        else if (winner == 2) {\n            team2bet.send(this.balance);\n        }\n        else {\n            team1bet.send(this.balance/2);\n            team2bet.send(this.balance/2);\n        }\n\n        return true;\n    }\n}\n",
+  "deployedSourceMap": "25:1041:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;717:347;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;566:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;88:23;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;59;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;640:71;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;382:178;;;;;;;;;;;;;;;;;;118:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;717:347;758:4;787:1;777:6;:11;774:262;;;804:8;;;;;;;;;;;:13;;:27;818:4;:12;;;804:27;;;;;;;;;;;;;;;;;;;;;;;;774:262;;;870:1;860:6;:11;856:180;;;887:8;;;;;;;;;;;:13;;:27;901:4;:12;;;887:27;;;;;;;;;;;;;;;;;;;;;;;;856:180;;;953:8;;;;;;;;;;;:13;;:29;980:1;967:4;:12;;;:14;;;;;;;;953:29;;;;;;;;;;;;;;;;;;;;;;;;996:8;;;;;;;;;;;:13;;:29;1023:1;1010:4;:12;;;:14;;;;;;;;996:29;;;;;;;;;;;;;;;;;;;;;;;;856:180;774:262;1053:4;1046:11;;717:347;;;:::o;566:68::-;597:4;620:7;;613:14;;566:68;:::o;88:23::-;;;;;;;;;;;;;:::o;59:::-;;;;;;;;;;;;;:::o;640:71::-;669:4;692;:12;;;685:19;;640:71;:::o;382:178::-;445:1;434:7;:12;431:123;;;473:10;462:8;;:21;;;;;;;;;;;;;;;;;;431:123;;;533:10;522:8;;:21;;;;;;;;;;;;;;;;;;431:123;382:178;:::o;118:19::-;;;;:::o",
+  "source": "pragma solidity ^0.4.4;\n\ncontract bettingContractV1 {\n\n    address public team0bet;\n    address public team1bet;\n\n    uint public matchId;\n\n    function bettingContractV1(uint _matchId, uint _choice) payable {\n        if(_choice == 0) {\n            team0bet = msg.sender;\n        }\n        else {\n            team1bet = msg.sender;\n        }\n\n        matchId = _matchId;\n    }\n\n    function makeBet(uint _choice) payable {\n        if(_choice == 0) {\n            team0bet = msg.sender;\n        }\n        else {\n            team1bet = msg.sender;\n        }\n    }\n\n    function getMatchId() returns (uint) {\n        return matchId;\n    }\n\n    function getFunds() returns (uint) {\n        return this.balance;\n    }\n\n    function setWinner(uint winner) returns (bool) {\n        if(winner == 0) {\n            team0bet.send(this.balance);\n        }\n        else if (winner == 1) {\n            team1bet.send(this.balance);\n        }\n        else {\n            team0bet.send(this.balance/2);\n            team1bet.send(this.balance/2);\n        }\n\n        return true;\n    }\n}\n",
   "sourcePath": "/home/mario/WebstormProjects/esbContractDevelopment/contracts/bettingContractV1.sol",
   "ast": {
     "absolutePath": "/home/mario/WebstormProjects/esbContractDevelopment/contracts/bettingContractV1.sol",
@@ -163,7 +163,7 @@
           {
             "constant": false,
             "id": 3,
-            "name": "team1bet",
+            "name": "team0bet",
             "nodeType": "VariableDeclaration",
             "scope": 128,
             "src": "59:23:0",
@@ -189,7 +189,7 @@
           {
             "constant": false,
             "id": 5,
-            "name": "team2bet",
+            "name": "team1bet",
             "nodeType": "VariableDeclaration",
             "scope": 128,
             "src": "88:23:0",
@@ -273,7 +273,7 @@
                     "operator": "==",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "hexValue": "31",
+                      "hexValue": "30",
                       "id": 15,
                       "isConstant": false,
                       "isLValue": false,
@@ -284,10 +284,10 @@
                       "src": "232:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
                       },
-                      "value": "1"
+                      "value": "0"
                     },
                     "src": "221:12:0",
                     "typeDescriptions": {
@@ -311,7 +311,7 @@
                           "leftHandSide": {
                             "argumentTypes": null,
                             "id": 23,
-                            "name": "team2bet",
+                            "name": "team1bet",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 5,
@@ -383,7 +383,7 @@
                           "leftHandSide": {
                             "argumentTypes": null,
                             "id": 17,
-                            "name": "team1bet",
+                            "name": "team0bet",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 3,
@@ -599,7 +599,7 @@
                     "operator": "==",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "hexValue": "31",
+                      "hexValue": "30",
                       "id": 41,
                       "isConstant": false,
                       "isLValue": false,
@@ -610,10 +610,10 @@
                       "src": "445:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
                       },
-                      "value": "1"
+                      "value": "0"
                     },
                     "src": "434:12:0",
                     "typeDescriptions": {
@@ -637,7 +637,7 @@
                           "leftHandSide": {
                             "argumentTypes": null,
                             "id": 49,
-                            "name": "team2bet",
+                            "name": "team1bet",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 5,
@@ -709,7 +709,7 @@
                           "leftHandSide": {
                             "argumentTypes": null,
                             "id": 43,
-                            "name": "team1bet",
+                            "name": "team0bet",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 3,
@@ -1029,7 +1029,7 @@
                     "operator": "==",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "hexValue": "31",
+                      "hexValue": "30",
                       "id": 82,
                       "isConstant": false,
                       "isLValue": false,
@@ -1040,10 +1040,10 @@
                       "src": "787:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
                       },
-                      "value": "1"
+                      "value": "0"
                     },
                     "src": "777:11:0",
                     "typeDescriptions": {
@@ -1080,7 +1080,7 @@
                       "operator": "==",
                       "rightExpression": {
                         "argumentTypes": null,
-                        "hexValue": "32",
+                        "hexValue": "31",
                         "id": 93,
                         "isConstant": false,
                         "isLValue": false,
@@ -1091,10 +1091,10 @@
                         "src": "870:1:0",
                         "subdenomination": null,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_rational_2_by_1",
-                          "typeString": "int_const 2"
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
                         },
-                        "value": "2"
+                        "value": "1"
                       },
                       "src": "860:11:0",
                       "typeDescriptions": {
@@ -1188,7 +1188,7 @@
                               "expression": {
                                 "argumentTypes": null,
                                 "id": 103,
-                                "name": "team1bet",
+                                "name": "team0bet",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 3,
@@ -1311,7 +1311,7 @@
                               "expression": {
                                 "argumentTypes": null,
                                 "id": 112,
-                                "name": "team2bet",
+                                "name": "team1bet",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 5,
@@ -1407,7 +1407,7 @@
                               "expression": {
                                 "argumentTypes": null,
                                 "id": 95,
-                                "name": "team2bet",
+                                "name": "team1bet",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 5,
@@ -1504,7 +1504,7 @@
                             "expression": {
                               "argumentTypes": null,
                               "id": 84,
-                              "name": "team1bet",
+                              "name": "team0bet",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 3,
@@ -1699,7 +1699,7 @@
           {
             "constant": false,
             "id": 3,
-            "name": "team1bet",
+            "name": "team0bet",
             "nodeType": "VariableDeclaration",
             "scope": 128,
             "src": "59:23:0",
@@ -1725,7 +1725,7 @@
           {
             "constant": false,
             "id": 5,
-            "name": "team2bet",
+            "name": "team1bet",
             "nodeType": "VariableDeclaration",
             "scope": 128,
             "src": "88:23:0",
@@ -1809,7 +1809,7 @@
                     "operator": "==",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "hexValue": "31",
+                      "hexValue": "30",
                       "id": 15,
                       "isConstant": false,
                       "isLValue": false,
@@ -1820,10 +1820,10 @@
                       "src": "232:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
                       },
-                      "value": "1"
+                      "value": "0"
                     },
                     "src": "221:12:0",
                     "typeDescriptions": {
@@ -1847,7 +1847,7 @@
                           "leftHandSide": {
                             "argumentTypes": null,
                             "id": 23,
-                            "name": "team2bet",
+                            "name": "team1bet",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 5,
@@ -1919,7 +1919,7 @@
                           "leftHandSide": {
                             "argumentTypes": null,
                             "id": 17,
-                            "name": "team1bet",
+                            "name": "team0bet",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 3,
@@ -2135,7 +2135,7 @@
                     "operator": "==",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "hexValue": "31",
+                      "hexValue": "30",
                       "id": 41,
                       "isConstant": false,
                       "isLValue": false,
@@ -2146,10 +2146,10 @@
                       "src": "445:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
                       },
-                      "value": "1"
+                      "value": "0"
                     },
                     "src": "434:12:0",
                     "typeDescriptions": {
@@ -2173,7 +2173,7 @@
                           "leftHandSide": {
                             "argumentTypes": null,
                             "id": 49,
-                            "name": "team2bet",
+                            "name": "team1bet",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 5,
@@ -2245,7 +2245,7 @@
                           "leftHandSide": {
                             "argumentTypes": null,
                             "id": 43,
-                            "name": "team1bet",
+                            "name": "team0bet",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 3,
@@ -2565,7 +2565,7 @@
                     "operator": "==",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "hexValue": "31",
+                      "hexValue": "30",
                       "id": 82,
                       "isConstant": false,
                       "isLValue": false,
@@ -2576,10 +2576,10 @@
                       "src": "787:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
                       },
-                      "value": "1"
+                      "value": "0"
                     },
                     "src": "777:11:0",
                     "typeDescriptions": {
@@ -2616,7 +2616,7 @@
                       "operator": "==",
                       "rightExpression": {
                         "argumentTypes": null,
-                        "hexValue": "32",
+                        "hexValue": "31",
                         "id": 93,
                         "isConstant": false,
                         "isLValue": false,
@@ -2627,10 +2627,10 @@
                         "src": "870:1:0",
                         "subdenomination": null,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_rational_2_by_1",
-                          "typeString": "int_const 2"
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
                         },
-                        "value": "2"
+                        "value": "1"
                       },
                       "src": "860:11:0",
                       "typeDescriptions": {
@@ -2724,7 +2724,7 @@
                               "expression": {
                                 "argumentTypes": null,
                                 "id": 103,
-                                "name": "team1bet",
+                                "name": "team0bet",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 3,
@@ -2847,7 +2847,7 @@
                               "expression": {
                                 "argumentTypes": null,
                                 "id": 112,
-                                "name": "team2bet",
+                                "name": "team1bet",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 5,
@@ -2943,7 +2943,7 @@
                               "expression": {
                                 "argumentTypes": null,
                                 "id": 95,
-                                "name": "team2bet",
+                                "name": "team1bet",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 5,
@@ -3040,7 +3040,7 @@
                             "expression": {
                               "argumentTypes": null,
                               "id": 84,
-                              "name": "team1bet",
+                              "name": "team0bet",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 3,
@@ -3207,9 +3207,9 @@
       "events": {},
       "links": {},
       "address": "0x345ca3e014aaf5dca488057592ee47305d9b3e10",
-      "transactionHash": "0xdc7d6bbf3699b43ef62d77321b39cecde9c298fa14ea827cd6854646b84b80ef"
+      "transactionHash": "0xb3c5c3c2dca5b2f3e0ba6bea6fc81ec1a638de1a97509f96cb42ad55518f38ef"
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-03-06T20:38:27.149Z"
+  "updatedAt": "2018-03-07T11:29:00.962Z"
 }
