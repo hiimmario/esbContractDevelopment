@@ -1,15 +1,32 @@
 pragma solidity ^0.4.11;
-import "github.com/oraclize/ethereum-api/oraclizeAPI.sol";
+import "http://github.com/oraclize/ethereum-api/oraclizeAPI.sol";
 
-contract bettingContractV2 {
-
+contract bettingContractV2 is usingOraclize
+{
     string public winner;
+
+    string public team0name;
+    string public team1name;
+
+    address public team0bet;
+    address public team1bet;
+
+    uint public matchId;
 
     event LogWinnerUpdated(string winner);
     event LogNewOraclizeQuery(string description);
 
-    function bettingContractV2() payable {
-        updateWinner();
+    function bettingContractV2(uint _matchId, uint _choice, string _winner) payable {
+        if(_choice == 0) {
+            team0bet = msg.sender;
+            team0name = _winner;
+        }
+        else {
+            team1bet = msg.sender;
+            team1name = _winner;
+        }
+
+        matchId = _matchId;
     }
 
     function __callback(bytes32 myid, string result) {
@@ -24,12 +41,31 @@ contract bettingContractV2 {
             LogNewOraclizeQuery("Oraclize query was NOT sent, please add some ETH to cover for the query fee");
         } else {
             LogNewOraclizeQuery("Oraclize query was sent, standing by for the answer..");
-            oraclize_query(60, "URL", "json(https://api.pandascore.co/matches?filter[id]=21835&token=xFEMHt5iIXzTaDydesV2fk01-L-YKp7OFLcZcWZJ4tav2Og-7jA).0.winner.name");
+            oraclize_query("URL", "json(https://api.pandascore.co/matches?filter[id]=" + matchId + "&token=xFEMHt5iIXzTaDydesV2fk01-L-YKp7OFLcZcWZJ4tav2Og-7jA).0.winner.name");
         }
     }
 
-    function getWinner() {
-        return winner;
+    function makeBet(uint _choice, string _winner) payable {
+        if(_choice == 0) {
+            team0bet = msg.sender;
+            team0name = _winner;
+        }
+        else {
+            team1bet = msg.sender;
+            team1name = _winner;
+        }
+    }
+
+    function setWinner(uint winner) {
+        if(winner == 0) {
+            team0bet.send(this.balance);
+        }
+        else if (winner == 1) {
+            team1bet.send(this.balance);
+        }
+        else {
+            team0bet.send(this.balance/2);
+            team1bet.send(this.balance/2);
+        }
     }
 }
-
