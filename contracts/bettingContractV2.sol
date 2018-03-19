@@ -3,8 +3,6 @@ import "http://github.com/oraclize/ethereum-api/oraclizeAPI.sol";
 
 contract bettingContractV2 is usingOraclize
 {
-    string public winner;
-
     string public team0name;
     string public team1name;
 
@@ -12,28 +10,25 @@ contract bettingContractV2 is usingOraclize
     address public team1bet;
 
     uint public matchId;
+    string public winner;
+
+    string public oraclizeUrl;
 
     event LogWinnerUpdated(string winner);
     event LogNewOraclizeQuery(string description);
 
-    function bettingContractV2(uint _matchId, uint _choice, string _winner) payable {
-        if(_choice == 0) {
-            team0bet = msg.sender;
-            team0name = _winner;
-        }
-        else {
-            team1bet = msg.sender;
-            team1name = _winner;
-        }
+    function bettingContractV2(uint _matchId, string _teamName, string _url) payable {
 
+        team0bet = msg.sender;
+        team0name = _teamName;
         matchId = _matchId;
+        oraclizeUrl = _url;
     }
 
-    function __callback(bytes32 myid, string result) {
-        require(msg.sender == oraclize_cbAddress());
+    function makeBet(string _teamName) payable {
 
-        winner = result;
-        LogWinnerUpdated(winner);
+        team1bet = msg.sender;
+        team1name = _teamName;
     }
 
     function updateWinner() payable {
@@ -41,31 +36,34 @@ contract bettingContractV2 is usingOraclize
             LogNewOraclizeQuery("Oraclize query was NOT sent, please add some ETH to cover for the query fee");
         } else {
             LogNewOraclizeQuery("Oraclize query was sent, standing by for the answer..");
-            oraclize_query("URL", "json(https://api.pandascore.co/matches?filter[id]=" + matchId + "&token=xFEMHt5iIXzTaDydesV2fk01-L-YKp7OFLcZcWZJ4tav2Og-7jA).0.winner.name");
+            oraclize_query("URL", oraclizeUrl);
         }
     }
 
-    function makeBet(uint _choice, string _winner) payable {
-        if(_choice == 0) {
-            team0bet = msg.sender;
-            team0name = _winner;
-        }
-        else {
-            team1bet = msg.sender;
-            team1name = _winner;
-        }
+    function __callback(bytes32 myid, string result) {
+        require(msg.sender == oraclize_cbAddress());
+
+        winner = result;
+        LogWinnerUpdated(winner);
+
+        payout();
     }
 
-    function setWinner(uint winner) {
-        if(winner == 0) {
+    function payout() {
+        if(compareStrings(winner, team0name)) {
             team0bet.send(this.balance);
         }
-        else if (winner == 1) {
+
+        if(compareStrings(winner, team1name)) {
             team1bet.send(this.balance);
         }
-        else {
-            team0bet.send(this.balance/2);
-            team1bet.send(this.balance/2);
-        }
+    }
+
+    function compareStrings (string a, string b) view returns (bool){
+        return keccak256(a) == keccak256(b);
+    }
+
+    function setWinner(string _winner) {
+        winner = _winner;
     }
 }
