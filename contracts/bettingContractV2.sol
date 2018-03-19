@@ -65,5 +65,6 @@ contract bettingContractV2 is usingOraclize
 
     function setWinner(string _winner) {
         winner = _winner;
+        payout();
     }
 }
