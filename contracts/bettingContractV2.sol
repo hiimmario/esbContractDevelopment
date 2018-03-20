@@ -25,6 +25,7 @@ contract bettingContractV2 is usingOraclize
         oraclizeUrl = _url;
     }
 
+    
     function makeBet(string _teamName) payable {
 
         team1bet = msg.sender;
